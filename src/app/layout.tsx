@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+/* import { Inter } from "next/font/google"; */
 import Provider from "@/app/context/client-provider"; // Your custom provider
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+/* const inter = Inter({ subsets: ["latin"] }); */
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +22,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         <Provider session={session}>
           {children}
         </Provider>

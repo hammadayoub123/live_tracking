@@ -93,7 +93,7 @@ export const authOptions: AuthOptions = {
         userName: { label: "userName", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      //@ts-ignore
+    
       async authorize(credentials, req) {
         if (typeof credentials !== "undefined") {
           let data = JSON.stringify({
